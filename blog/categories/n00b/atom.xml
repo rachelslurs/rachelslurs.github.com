@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: n00b | My Octopress Blog]]></title>
+  <link href="http://rachelslurs.github.com/blog/categories/n00b/atom.xml" rel="self"/>
+  <link href="http://rachelslurs.github.com/"/>
+  <updated>2012-09-17T00:58:11-04:00</updated>
+  <id>http://rachelslurs.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[This is my first time.]]></title>
+    <link href="http://rachelslurs.github.com/blog/2012/09/17/this-is-my-first-time/"/>
+    <updated>2012-09-17T00:12:00-04:00</updated>
+    <id>http://rachelslurs.github.com/blog/2012/09/17/this-is-my-first-time</id>
+    <content type="html"><![CDATA[<p>I've been using Jekyll to build a website. Trying out this Octopress goodness.</p>
+]]></content>
+  </entry>
+  
+</feed>
