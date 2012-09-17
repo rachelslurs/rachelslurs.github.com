@@ -4,7 +4,7 @@
   <title><![CDATA[Rachel Slurs]]></title>
   <link href="http://rachelslurs.github.com/atom.xml" rel="self"/>
   <link href="http://rachelslurs.github.com/"/>
-  <updated>2012-09-17T02:35:46-04:00</updated>
+  <updated>2012-09-17T03:03:04-04:00</updated>
   <id>http://rachelslurs.github.com/</id>
   <author>
     <name><![CDATA[Rachel Slurs]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Gettin' Jiggy With Jekyll]]></title>
+    <link href="http://rachelslurs.github.com/blog/2012/09/17/gettin-jiggy-with-jekyll/"/>
+    <updated>2012-09-17T02:43:00-04:00</updated>
+    <id>http://rachelslurs.github.com/blog/2012/09/17/gettin-jiggy-with-jekyll</id>
+    <content type="html"><![CDATA[<p>I&#8217;m really into making terrible blog post titles. Luckily, I don&#8217;t care if you feel anything but amused.</p>
+
+<p>I&#8217;m from a Drupal/Wordpress background, so when I was asked to create a site that would preferably not require maintenance of a server and was presented with Jekyll, I was excited, but underestimated my database addiction, by a lot.</p>
+
+<p>I created this blog as a venting of my frustrations and a written expression of the bizarre happy dance I do when I finally get things right. Overall I would describe my experience as both perplexing and satisfying, the yin and yang of what MAW would call LEARNIN&#8217;. Chances are, this blog will pose more questions than answers, so I can&#8217;t understand why anyone would want to read this, but who knows. Maybe if only to satisfy the frustrations of other n00bs looking for comfort, ie &#8220;dude, I totally get you&#8221; or &#8220;dude, you&#8217;re fucking crazy.&#8221;</p>
+
+<p>Ta-da.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[This is my first time.]]></title>
