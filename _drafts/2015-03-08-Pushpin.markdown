@@ -1,0 +1,11 @@
+---
+layout: post
+title: Pushpin
+date: 2015-03-08 14:30
+url: http://pushpin.org/
+---
+
+[Pushpin](http://pushpin.org/)
+
+> Pushpin is a reverse proxy server that makes it easy to build realtime web services. What's unique about Pushpin is that its external interface is defined by whatever backend applications are running behind it. 
+
