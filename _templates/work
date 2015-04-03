@@ -1,0 +1,9 @@
+---
+layout: {{ layout }}
+title: {{ title }}
+date: {{ date }}
+client: {{ client }}
+tech: {{ tech }}
+press-1-title: {{ press-1-title }}
+press-1-link: {{ press-1-link }}
+---

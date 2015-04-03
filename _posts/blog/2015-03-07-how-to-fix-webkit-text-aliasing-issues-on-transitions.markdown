@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: "How to Fix Webkit Text Aliasing Issues on Transitions"
 date: 2015-03-07T17:05:33-05:00
 reference-url: http://stackoverflow.com/a/21136111/1672670
