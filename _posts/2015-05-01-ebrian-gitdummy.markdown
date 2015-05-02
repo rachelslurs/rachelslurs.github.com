@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ebrian/gitdummy
+title: gitdummy
 date: 2015-05-01 19:30
 url: https://github.com/ebrian/gitdummy
 ---
