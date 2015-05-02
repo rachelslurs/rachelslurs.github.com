@@ -1,6 +1,6 @@
 ---
 layout: post
-title: tiimgreen/github-cheat-sheet
+title: Github Cheat Sheet
 date: 2015-02-16 01:03
 url: https://github.com/tiimgreen/github-cheat-sheet#readme
 ---
