@@ -1,6 +1,6 @@
 ---
 layout: post
-title: femmebot/google-type
+title: Google Type
 date: 2015-05-02 09:39
 url: https://github.com/femmebot/google-type
 ---
