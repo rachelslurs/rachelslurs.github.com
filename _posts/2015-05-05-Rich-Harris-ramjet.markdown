@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rich-Harris/ramjet
+title: ramjet
 date: 2015-05-05 18:29
 url: https://github.com/Rich-Harris/ramjet
 ---
