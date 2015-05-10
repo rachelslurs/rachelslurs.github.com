@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Apple A Day | Apple Themed Coding Exercises
-date: 2015-05-10 16:55
+date: 2015-05-09 16:55
 url: http://jonitrythall.github.io/appleproject/
 ---
 

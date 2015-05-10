@@ -1,0 +1,13 @@
+---
+layout: post
+title: Jello
+date: 2015-05-10 5:15
+url: http://codepen.io/bradleyboy/pen/upqAv
+---
+
+[Jello](http://codepen.io/bradleyboy/pen/upqAv)
+
+> Little experiment to learn SASS syntax, specifically @for loops.
+
+<p data-height="351" data-theme-id="0" data-slug-hash="upqAv" data-default-tab="result" data-user="bradleyboy" class='codepen'>See the Pen <a href='http://codepen.io/bradleyboy/pen/upqAv/'>Jello</a> by Brad Daily (<a href='http://codepen.io/bradleyboy'>@bradleyboy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
