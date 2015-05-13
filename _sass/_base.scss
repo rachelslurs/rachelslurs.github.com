@@ -102,7 +102,16 @@ a {
     }
 }
 
+svg {
+    display: inline-block;
+    vertical-align: middle;
 
+    path {
+        fill: none;
+        stroke:#2d2d2d;
+        stroke-width:1;
+    }
+}
 
 /**
  * Blockquotes

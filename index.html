@@ -4,15 +4,14 @@ layout: default
 
 <div class="home">
   <h1 class="page-heading">Work</h1>
-  <ul class="post-list">
+  <ul class="work-list">
     {% for post in site.posts %}
       {% if post.layout == 'work' %}
       <li>
         <span class="post-meta">{{ post.tech }}</span>
-
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h3>
       </li>
       {% endif %}
     {% endfor %}
@@ -23,10 +22,12 @@ layout: default
       {% if post.layout == 'blog' %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h3>
+        <p>
+          {{ post.excerpt | strip_html | truncatewords:20}}
+        </p>
       </li>
       {% endif %}
     {% endfor %}
@@ -37,10 +38,12 @@ layout: default
       {% if post.layout == 'post' %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h3>
+        <p>
+          {{ post.excerpt | strip_html | truncatewords:20}}
+        </p>
       </li>
       {% endif %}
     {% endfor %}

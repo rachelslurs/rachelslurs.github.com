@@ -2,10 +2,8 @@
 layout: post
 title: code splitting
 date: 2015-05-08 11:28
-url: http://webpack.github.io/docs/code-splitting.html
+linkurl: http://webpack.github.io/docs/code-splitting.html
 ---
-
-[code splitting](http://webpack.github.io/docs/code-splitting.html)
 
 > For big web apps it’s not efficient to put all code into a single file, especially if some blocks of code are only required under some circumstances. webpack has a feature to split your codebase into “chunks” which are loaded on demand. Some other bundlers call them “layers”, “rollups”, or “fragments”. This feature is called “code splitting”.
 > 

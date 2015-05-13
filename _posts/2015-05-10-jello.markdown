@@ -2,10 +2,8 @@
 layout: post
 title: Jello
 date: 2015-05-10 5:15
-url: http://codepen.io/bradleyboy/pen/upqAv
+linkurl: http://codepen.io/bradleyboy/pen/upqAv
 ---
-
-[Jello](http://codepen.io/bradleyboy/pen/upqAv)
 
 > Little experiment to learn SASS syntax, specifically @for loops.
 
