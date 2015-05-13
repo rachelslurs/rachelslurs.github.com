@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DevTools Timeline: Now Providing the Full Story
+title: DevTools Timeline
 date: 2015-05-12 02:46
 url: http://updates.html5rocks.com/2015/04/devtools-timeline-improvements
 ---
