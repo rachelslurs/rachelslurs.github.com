@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FAQ: Allocate More Memory · OpenRefine/OpenRefine Wiki
+title: FAQ&#58; Allocate More Memory - OpenRefine/OpenRefine Wiki
 date: 2015-05-18 13:40
 linkurl: https://github.com/OpenRefine/OpenRefine/wiki/FAQ:-Allocate-More-Memory
 ---
