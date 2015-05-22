@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive HTML Email Framework
-date: 2015-05-22 12:19
+date: 2015-05-19 12:19
 url: http://emailframe.work
 ---
 
