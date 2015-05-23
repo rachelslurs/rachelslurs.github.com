@@ -2,7 +2,7 @@
 layout: post
 title: Atomic CSS
 date: 2015-05-20 12:32
-url: http://acss.io
+linkurl: http://acss.io
 ---
 
 > Build whatever you want, the way you want it.
