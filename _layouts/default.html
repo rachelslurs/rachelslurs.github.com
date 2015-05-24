@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+  <body unresolved>
+    <core-scaffold responsivewidth="900px">
+      {% include header.html %}
+      <div class="title-container" tool flex>
+        <h1 class="title"><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+        <paper-icon-button class="download-button" icon="file-download"></paper-icon-button>
+      </div>
+      <div class="content">
         {{ content }}
       </div>
-    </div>
-
+    </core-scaffold>
     {% include footer.html %}
-
   </body>
-
 </html>
