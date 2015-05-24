@@ -1,23 +1,9 @@
 ---
-layout: default
+layout: content
 ---
 
-<article>
-  <header>
-    <h1><a href="{{ page.linkurl }}">{{ page.title }}</a></h1>
-  </header>
-  {{ content }}
-  <footer>
-    <p><small>{{ site.name }}, {{ page.date | date_to_string }}</small></p>
-    <p><small>{ page.date | date: "%b %-d, %Y" }}{{ page.meta }}</small></p>
-  </footer>
-  <aside>
-    <ul>
-      {% for post in site.related_posts %}
-	      <li>
-	        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	      </li>
-      {% endfor %}
-    </ul>
-  </aside>
-</article>
+<a href="{{ page.linkurl }}">{{ page.title }}</a>
+{{ content }}
+
+<p><small>{{ site.name }}, {{ page.date | date_to_string }}</small></p>
+<p><small>{ page.date | date: "%b %-d, %Y" }}{{ page.meta }}</small></p>

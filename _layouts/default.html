@@ -2,16 +2,40 @@
 <html>
   {% include head.html %}
   <body unresolved>
-    <core-scaffold responsivewidth="900px">
-      {% include header.html %}
-      <div class="title-container" tool flex>
-        <h1 class="title"><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
-        <paper-icon-button class="download-button" icon="file-download"></paper-icon-button>
-      </div>
-      <div class="content">
-        {{ content }}
-      </div>
-    </core-scaffold>
-    {% include footer.html %}
+    <sampler-scaffold responsivewidth="900px" label="{{ site.title }}">
+    {% for page in site.pages %}
+      <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
+    {% endfor %}
+    <h2>Work</h2>
+    {% for post in site.posts %}
+      {% if post.layout == 'work' %}
+        <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
+          <span class="post-meta">{{ post.tech }}</span>
+        </core-item>
+      {% endif %}
+    {% endfor %}
+    <h2>Blog</h2>
+    {% for post in site.posts %}
+      {% if post.layout == 'blog' %}
+        <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <p>
+            {{ post.excerpt | strip_html | truncatewords:20}}
+          </p>
+        </core-item>
+      {% endif %}
+    {% endfor %}
+    <h2>Links</h2>
+    {% for post in site.posts %}
+      {% if post.layout == 'post' %}
+        <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <p>
+            {{ post.excerpt | strip_html | truncatewords:20}}
+          </p>
+        </core-item>
+      {% endif %}
+    {% endfor %}
+    </sampler-scaffold>
   </body>
 </html>

@@ -4,8 +4,6 @@
     {% for page in site.pages %}
       <paper-item><a href="{{ page.baseurl }}{{ page.url }}">{{ page.title }}</a></paper-item>
     {% endfor %}
-  </core-menu>
-  <core-menu>
     {% for post in site.posts %}
       <paper-item><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></paper-item>
     {% endfor %}
