@@ -14,28 +14,33 @@
         </core-item>
       {% endif %}
     {% endfor %}
-    <h2>Blog</h2>
-    {% for post in site.posts %}
-      {% if post.layout == 'blog' %}
-        <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <p>
-            {{ post.excerpt | strip_html | truncatewords:20}}
-          </p>
-        </core-item>
-      {% endif %}
-    {% endfor %}
-    <h2>Links</h2>
-    {% for post in site.posts %}
-      {% if post.layout == 'post' %}
-        <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <p>
-            {{ post.excerpt | strip_html | truncatewords:20}}
-          </p>
-        </core-item>
-      {% endif %}
-    {% endfor %}
+
+    <core-menu>
+      <core-submenu icon="create" label="Blog">
+      {% for post in site.posts %}
+        {% if post.layout == 'blog' %}
+          <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <p>
+              {{ post.excerpt | strip_html | truncatewords:20}}
+            </p>
+          </core-item>
+        {% endif %}
+      {% endfor %}
+      </core-submenu>
+      <core-submenu icon="settings" label="Bookmarks">
+        {% for post in site.posts %}
+          {% if post.layout == 'post' %}
+            <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <p>
+                {{ post.excerpt | strip_html | truncatewords:20}}
+              </p>
+            </core-item>
+          {% endif %}
+        {% endfor %}
+        </core-submenu>
+    </core-menu>
     </sampler-scaffold>
   </body>
 </html>
