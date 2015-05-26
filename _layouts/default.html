@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   <body unresolved>
-    <sampler-scaffold responsivewidth="900px" label="{{ site.title }}">
+    <sampler-scaffold label="{{ site.title }}">
     {% for page in site.pages %}
       <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
     {% endfor %}
@@ -28,7 +28,7 @@
         {% endif %}
       {% endfor %}
       </core-submenu>
-      <core-submenu icon="settings" label="Bookmarks">
+      <core-submenu icon="bookmark" label="Bookmarks">
         {% for post in site.posts %}
           {% if post.layout == 'post' %}
             <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
