@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   <body unresolved>
-    <sampler-scaffold label="{{ site.title }}">
+    <sampler-scaffold label="{{ site.title }}" responsivewidth="768px">
     {% for page in site.pages %}
       {% if page.layout == 'page' %}
         <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
@@ -34,10 +34,6 @@
         {% for post in site.posts %}
           {% if post.layout == 'post' %}
             <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <p>
-                {{ post.excerpt | strip_html | truncatewords:20}}
-              </p>
             </core-item>
           {% endif %}
         {% endfor %}
