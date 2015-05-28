@@ -10,6 +10,12 @@ margin: 0;
 font-weight: 300;
 color: #{{ site.data.colors.black }};
 }
+sampler-scaffold {
+	font-family: {{ site.data.colors.titlefont }}, sans-serif;
+}
+core-item {
+	font-family: {{ site.data.colors.navfont }}, sans-serif;
+}
 .title, .title a {
 font-size: 2.5rem;
 }

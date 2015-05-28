@@ -1,9 +1,20 @@
 ---
-layout: content
+layout: default
 ---
 
-<a href="{{ page.linkurl }}">{{ page.title }}</a>
-{{ content }}
+ <div class="title-container" tool flex>
+  <h1 class="title"><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+  <paper-icon-button class="download-button" icon="file-download"></paper-icon-button>
+  </div>
+  <div class="content">
+  {{ content }}
+  </div>
+<article>
+	<header>
+		<a href="{{ page.linkurl }}">{{ page.title }}</a>
+	</header>
+	{{ content }}
 
-<p><small>{{ site.name }}, {{ page.date | date_to_string }}</small></p>
-<p><small>{ page.date | date: "%b %-d, %Y" }}{{ page.meta }}</small></p>
+	<p><small>{{ site.name }}, {{ page.date | date_to_string }}</small></p>
+	<p><small>{ page.date | date: "%b %-d, %Y" }}{{ page.meta }}</small></p>
+</article>

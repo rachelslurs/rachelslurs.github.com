@@ -4,7 +4,9 @@
   <body unresolved>
     <sampler-scaffold label="{{ site.title }}">
     {% for page in site.pages %}
-      <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
+      {% if page.layout == 'page' %}
+        <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
+      {% endif %}
     {% endfor %}
     <h2>Work</h2>
     {% for post in site.posts %}

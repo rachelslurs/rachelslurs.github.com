@@ -16,3 +16,6 @@ black: 333
 white: fff
 dark-gray: 444
 light-gray: f9f9f9
+
+titlefont: "quimby-gubernatorial"
+navfont: "aw-conqueror-carved-one"
