@@ -5,7 +5,7 @@ layout: default
 
   <header class="work-header">
     <h1 class="work-title">{{ page.title }}</h1>
-    <p class="work-meta">{{% if page.meta %}}{{ page.meta }}{{% endif %}}{{% if page.press-title-1 %}}Press: <a href="{{ page.press-link-1 }}">{{ page.press-title-1 }}</a>{{% endif %}}</p>
+    <p class="work-meta">{% if page.meta %}{{ page.meta }}{% endif %}{% if page.press-title-1 %}Press: <a href="{{ page.press-link-1 }}">{{ page.press-title-1 }}</a>{% endif %}</p>
     <p class="work-meta">{{% if page.tech %}}{{ page.tech }}{{% endif %}}</p>
   </header>
 
