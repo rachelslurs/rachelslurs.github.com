@@ -2,33 +2,14 @@
 layout: content
 ---
 
-<paper-tabs selected="{{selected}}">
-  <paper-tab>About</paper-tab>
-  <paper-tab>Demo</paper-tab>
-  <paper-tab>In the press</paper-tab>
-</paper-tabs>
-
-<core-pages selected="{{selected}}">
-  <div>
-  	{{ content }}
-  </div>
-  <div>
-    <h1><a href="{{ page.linkurl }}">{{ page.title }}</a></h1></div>
-     <p><small>{{% if page.tech %}}{{ page.tech }}{{% endif %}}</small></p>
-  <div>
-  	<p>
-  		<small>
-  			{{% if page.meta %}}{{ page.meta }}{{% endif %}}{{% if page.press-title-1 %}}Press: <a href="{{ page.press-link-1 }}">{{ page.press-title-1 }}</a>{{% endif %}}
-  		</small>
-  	</p>
-  </div>
-</core-pages>
-
-<script type="text/javascript">
-	var tabs = document.querySelector('paper-tabs');
-	var pages = document.querySelector('core-pages');
-
-	tabs.addEventListener('core-select',function(){
-	  pages.selected = tabs.selected;
-	});
-</script>
+<div>
+	{{ content }}
+</div>
+   <p><small>{{% if page.tech %}}{{ page.tech }}{{% endif %}}</small></p>
+<div>
+	<p>
+		<small>
+			{{% if page.meta %}}{{ page.meta }}{{% endif %}}{{% if page.press-title-1 %}}Press: <a href="{{ page.press-link-1 }}">{{ page.press-title-1 }}</a>{{% endif %}}
+		</small>
+	</p>
+</div>
