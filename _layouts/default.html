@@ -7,6 +7,10 @@
         {% if page.layout == 'content' %}
           <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
         {% endif %}
+
+        {% if page.layout == 'list' %}
+          <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
+        {% endif %}
       {% endfor %}
       {% for post in site.posts %}
         {% if post.layout == 'work' %}
@@ -15,18 +19,7 @@
         {% endif %}
       {% endfor %}
 
-      {% for post in site.posts %}
-        {% if post.layout == 'blog' %}
-          <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
-          </core-item>
-        {% endif %}
-      {% endfor %}
-      {% for post in site.posts %}
-        {% if post.layout == 'post' %}
-          <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
-          </core-item>
-        {% endif %}
-      {% endfor %}
+      
     </sampler-scaffold>
   </body>
 </html>
