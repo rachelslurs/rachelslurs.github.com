@@ -6,7 +6,7 @@ permalink: /blog/
 
 {% for post in site.posts %}
 	{% if post.layout == 'blog' %}
-		<core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
-		</core-item>
+		<h4>{{ post.title }}</h4>
+		<p>{{ site.baseurl }}{{ post.url }}</p>
 	{% endif %}
 {% endfor %}

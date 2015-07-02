@@ -5,17 +5,21 @@ font-family: RobotoDraft, sans-serif;
 font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
-font-family: inherit;
+font-family: {{ site.data.colors.navfont }}, sans-serif;
 margin: 0;
-font-weight: 300;
+font-weight: 400;
+font-size:20px;
 color: #{{ site.data.colors.black }};
 }
 section {
-  padding: 40px;
-  min-height: 300px;
+  padding: 20px 40px;
 }
 sampler-scaffold {
 	font-family: {{ site.data.colors.navfont }}, sans-serif;
+}
+
+#drawerPanel, [drawer] {
+	background-color: #21CA8F;
 }
 core-item {
 	font-family: {{ site.data.colors.navfont }}, sans-serif;
@@ -29,7 +33,7 @@ color: #{{ site.data.colors.white }};
 .title a:hover, core-menu paper-item a:hover {
 text-decoration: none;
 }
-h1 {
+/*h1 {
 font-size: 4.5rem;
 }
 h2 {
@@ -46,12 +50,13 @@ font-size: 2.5rem;
 }
 h6 {
 font-size: 2rem;
-}
-p, a {
-font-size: 1.2rem;
+}*/
+p {
+font-size: 1.1rem;
+line-height: 1.5rem;
 }
 p {
-padding-left: 16px;
+
 color: #{{ site.data.colors.dark-gray }};
 }
 a {

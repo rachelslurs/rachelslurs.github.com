@@ -8,8 +8,10 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<script src="//use.typekit.net/pvw5hkp.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	<link rel="import" href="{{ site.baseurl }}/bower_components/polymer/polymer.html">
-	<link rel="import" href="{{ site.baseurl }}/bower_components/sampler-scaffold/sampler-scaffold.html">
+	
+
+  <script src="{{ site.baseurl }}/bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="{{ site.baseurl }}/bower_components/sampler-scaffold/site-scaffold.html">
 	<link rel="import" href="{{ site.baseurl }}/bower_components/core-item/core-item.html">
 	<link rel="import" href="{{ site.baseurl }}/bower_components/core-icons/core-icons.html">
 <!-- 	<link rel="import" href="{{ site.baseurl }}/bower_components/core-pages/core-pages.html"> -->

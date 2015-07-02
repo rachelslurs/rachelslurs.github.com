@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   <body unresolved>
-    <sampler-scaffold label="{{ site.title }}">
+    <site-scaffold label="{{ site.title }}">
       {% for page in site.pages %}
         {% if page.layout == 'content' %}
           <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
@@ -18,8 +18,6 @@
           </core-item>
         {% endif %}
       {% endfor %}
-
-      
-    </sampler-scaffold>
+    </site-scaffold>
   </body>
 </html>
