@@ -45,7 +45,7 @@ Prior to my time on the R&D team, I was the sole developer for Control Group’s
 
 ####Productivity Boost Using Google Apps Script
 
-- [Blog Post >][7]
+ - [Blog Post >][7]
 
  - Google Apps Script
  - Integrates with Zendesk API
