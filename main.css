@@ -17,28 +17,49 @@ section {
 sampler-scaffold {
 	font-family: {{ site.data.colors.navfont }}, sans-serif;
 }
+paper-fab {
+  color: #fff;
+  margin-right:2em;
+  float:right;
+  background: #5677fc;
+}
 .card {
-	display: inline-block;
 	box-sizing: border-box;
-	width:150px;
 	margin: 0px;
 	padding: 10px;
 }
 .outer-card {
-	display: inline-block;
 	background: #fafafa;
 	box-sizing: border-box;
-	width:150px;
 	margin: 20px;
 	padding: 0px;
 }
-.outer-card a {
-}
 .outer-card:nth-child(1n+1) {
-	background-color: #9C27B0;
+	background-color: #fafafa;
+}
+.outer-card:nth-child(1n+1) a {
+	color: #1A237E;
+}
+.outer-card:nth-child(1n+1) h3 {
+	color: #1A237E;
+}
+.outer-card:nth-child(1n+1) h3 > p {
+	font-family: RobotoDraft, sans-serif;
+	text-transform: none;
 }
 .outer-card:nth-child(2n+2) {
-	background-color: #FF5722;
+	background-color: #3F51B5;
+}
+.outer-card:nth-child(2n+2) a {
+	color: #E8EAF6;
+}
+.outer-card:nth-child(2n+2) h3 {
+	color: #E8EAF6;
+}
+.outer-card:nth-child(2n+2) h3 > p {
+	font-family: RobotoDraft, sans-serif;
+	text-transform: none;
+	color:white;
 }
 #drawerPanel, [drawer] {
 	background-color: #21CA8F;

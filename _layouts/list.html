@@ -7,19 +7,24 @@
 			{% for post in site.posts %}
 				{% if page.title == 'Blog' %}
 					{% if post.layout == 'blog' %}
-						<paper-shadow class="outer-card" z="1" layout horizontal>
-							<paper-item class="card">
-								<a href="{{ site.baseurl }}{{ post.url }}" target="_self">{{ post.title }}</a>
-							</paper-item>
+						<paper-shadow class="outer-card" z="2" layout horizontal>
+							<a href="{{ site.baseurl }}{{ post.url }}" target="_self">
+								<paper-item class="card">
+									<h3>{{ post.title }}<p><small>{{ post.date | date: "%b %-d, %Y" }}</small></p></h3>
+								</paper-item>
+							</a>
 						</paper-shadow>
+
 					{% endif %}
 				{% endif %}
-				{% if page.title == 'Snippets' %}
+				{% if page.title == 'Bookmarks' %}
 					{% if post.layout == 'post' %}
-						<paper-shadow class="outer-card" z="1" layout horizontal>
-							<paper-item class="card">
-								<a href="{{ site.baseurl }}{{ post.url }}" target="_self">{{ post.title }}</a>
-							</paper-item>
+						<paper-shadow class="outer-card" z="2" layout horizontal>
+							<a href="{{ site.baseurl }}{{ post.url }}" target="_self">
+								<paper-item class="card">
+									{{ post.title }}
+								</paper-item>
+							</a>
 						</paper-shadow>
 					{% endif %}
 				{% endif %}

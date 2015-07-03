@@ -1,7 +1,7 @@
 ---
 layout: list
-title: Snippets
-permalink: /snippets/
+title: Bookmarks
+permalink: /bookmarks/
 ---
 
 {{content}}

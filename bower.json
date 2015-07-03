@@ -21,7 +21,8 @@
     "paper-tabs": "polymer/paper-tabs#~0.5.6",
     "core-pages": "polymer/core-pages#~0.5.6",
     "sampler-scaffold": "polymer/sampler-scaffold#~0.5.6",
-    "core-animated-pages": "Polymer/core-animated-pages#~0.5.6"
+    "core-animated-pages": "Polymer/core-animated-pages#~0.5.6",
+    "paper-fab": "Polymer/paper-fab#~0.5.6"
   },
   "resolutions": {
     "polymer": "^0.5",
