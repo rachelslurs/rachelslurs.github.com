@@ -8,15 +8,13 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<script src="//use.typekit.net/pvw5hkp.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	
-
-  <script src="{{ site.baseurl }}/bower_components/webcomponentsjs/webcomponents.js"></script>
-	<link rel="import" href="{{ site.baseurl }}/bower_components/sampler-scaffold/site-scaffold.html">
+	<script src="{{ site.baseurl }}/bower_components/webcomponentsjs/webcomponents.js"></script>
 	<link rel="import" href="{{ site.baseurl }}/bower_components/core-item/core-item.html">
 	<link rel="import" href="{{ site.baseurl }}/bower_components/core-icons/core-icons.html">
-	<link rel="import" href="{{ site.baseurl }}/bower_components/paper-fab/paper-fab.html">
-	<link rel="import" href="{{ site.baseurl }}/bower_components/paper-shadow/paper-shadow.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/core-animated-pages/core-animated-pages.html">
+	<link rel="import" href="{{ site.baseurl }}/bower_components/paper-tabs/paper-tabs.html">
 	<link rel="import" href="{{ site.baseurl }}/bower_components/paper-item/paper-item.html">
+	
 	<link rel="stylesheet" href="{{ site.baseurl }}/main.css" shim-shadowdom>
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />

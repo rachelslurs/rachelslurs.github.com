@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
+  <body unresolved>
+    <site-scaffold label="{{ site.title }}">
+      {% for page in site.pages %}
+        {% if page.layout == 'content' %}
+          <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
+        {% endif %}
 
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
+        {% if page.layout == 'list' %}
+          <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
+        {% endif %}
+      {% endfor %}
+      {% for post in site.posts %}
+        {% if post.layout == 'work' %}
+          <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
+          </core-item>
+        {% endif %}
+      {% endfor %}
+    </site-scaffold>
   </body>
-
 </html>
