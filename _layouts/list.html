@@ -3,22 +3,28 @@
   {% include head.html %}
   <body unresolved>
   	<section>
-		{% for post in site.posts %}
-			{% if page.title == 'Blog' %}
-				{% if post.layout == 'blog' %}
-					<paper-item>
-						<a href="{{ site.baseurl }}{{ post.url }}" target="_self" layout horizontal center>{{ post.title }}</a>
-					</paper-item>
+  		<div horizontal layout wrap>
+			{% for post in site.posts %}
+				{% if page.title == 'Blog' %}
+					{% if post.layout == 'blog' %}
+						<paper-shadow class="outer-card" z="1" layout horizontal>
+							<paper-item class="card">
+								<a href="{{ site.baseurl }}{{ post.url }}" target="_self">{{ post.title }}</a>
+							</paper-item>
+						</paper-shadow>
+					{% endif %}
 				{% endif %}
-			{% endif %}
-			{% if page.title == 'Snippets' %}
-				{% if post.layout == 'post' %}
-					<paper-item>
-						<a href="{{ site.baseurl }}{{ post.url }}" target="_self" layout horizontal center>{{ post.title }}</a>
-					</paper-item>
+				{% if page.title == 'Snippets' %}
+					{% if post.layout == 'post' %}
+						<paper-shadow class="outer-card" z="1" layout horizontal>
+							<paper-item class="card">
+								<a href="{{ site.baseurl }}{{ post.url }}" target="_self">{{ post.title }}</a>
+							</paper-item>
+						</paper-shadow>
+					{% endif %}
 				{% endif %}
-			{% endif %}
-		{% endfor %}
+			{% endfor %}
+		</div>
   	</section>
   </body>
 </html>

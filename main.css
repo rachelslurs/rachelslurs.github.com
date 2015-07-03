@@ -17,7 +17,29 @@ section {
 sampler-scaffold {
 	font-family: {{ site.data.colors.navfont }}, sans-serif;
 }
-
+.card {
+	display: inline-block;
+	box-sizing: border-box;
+	width:150px;
+	margin: 0px;
+	padding: 10px;
+}
+.outer-card {
+	display: inline-block;
+	background: #fafafa;
+	box-sizing: border-box;
+	width:150px;
+	margin: 20px;
+	padding: 0px;
+}
+.outer-card a {
+}
+.outer-card:nth-child(1n+1) {
+	background-color: #9C27B0;
+}
+.outer-card:nth-child(2n+2) {
+	background-color: #FF5722;
+}
 #drawerPanel, [drawer] {
 	background-color: #21CA8F;
 }
