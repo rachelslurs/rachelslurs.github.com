@@ -3,7 +3,22 @@
   {% include head.html %}
   <body unresolved>
   	<section>
-		{{content}}
+		{% for post in site.posts %}
+			{% if page.title == 'Blog' %}
+				{% if post.layout == 'blog' %}
+					<paper-item>
+						<a href="{{ site.baseurl }}{{ post.url }}" target="_self" layout horizontal center>{{ post.title }}</a>
+					</paper-item>
+				{% endif %}
+			{% endif %}
+			{% if page.title == 'Snippets' %}
+				{% if post.layout == 'post' %}
+					<paper-item>
+						<a href="{{ site.baseurl }}{{ post.url }}" target="_self" layout horizontal center>{{ post.title }}</a>
+					</paper-item>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
   	</section>
   </body>
 </html>
