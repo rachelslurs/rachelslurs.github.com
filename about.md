@@ -4,39 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<<<<<<< HEAD
-I am a self-taught software engineer, specializing in the web. I am seeking an opportunity to further my exploration of what one can do with creative applications of the web. I am seeking something full time, at a company where experimentation is encouraged, and work-life balance is valued.
-
-###Experience Overview
-My most recent experience was on the Research and Development team at tech consultancy, Control Group. I worked with clients such as the ACLU, World Wide Group, and the Edward M. Kennedy Institute for the Senate.
-
-###Edward M. Kennedy Institute for the Senate
-Interactive Museum
-
-- [Case Study][1]
-- [Video][2]
-
-My favorite project was the museum which opened this year in March, which was part of Edward Kennedy’s vision for a museum to teach children about the United States Senate in an exciting and immersive way. I worked onsite in the month prior to the opening and was amazed at how empty the building appeared without our tech, with the exception of the impeccably ornate replica of the Senate chamber. The entire museum is web based: from the Android tablets each visitor uses to interact with the museum, to the enormous projections on the wall that make up most of the museum’s exhibits. 
-
-The tablets involved a considerable reliance on Angular for the various microapps contained within, and communicated with the museum at large using web sockets via Scala’s Play framework. I worked primarily on the front end for the tablets, learning a lot about Angular in the process. The wall exhibits were primarily single page web apps, but with a large reliance on responding to the states being sent by the platform. Since the animations were significant in terms of performance demands, I had to collaborate extensively with the backend engineers to come up with ways to avoid the appearance of “jank” on the front end. Most significantly, this can be seen in the exhibit “People of the Senate.” This exhibit, a single page web app, with a considerably complicated API, would change every 10 seconds for every session of the senate, going back to when there weren’t even 50 states, with pictures of each senator (or illustrations). I was tasked with adding a smooth card flip animation, even though there could be up to 50 image changes in a tick. Through some trial and error, and collaboration with the backend engineers, I created an animation that appears smooth and has an aquarium-like effect.
-
-###World Wide Group 
-High Tech Sales Office
-
-- [Case Study][3]
-- [Video][4]
-
-Before the museum, I worked on the World Wide Group’s high tech sales office. I created a Chrome packaged app that responded to two RFID readers to change the views on an 80 inch 4k screen. The main challenges here were the animations as well. Since it was a webview on a pixel dense screen, the paint issues required significant troubleshooting, but ultimately, it ended up being a very elegant solution and paired nicely with an extravagant rotating 12 foot model of the building, that responded to the RFID readers as well. 
-
-###Company Website
-
-- [Blog Post][5]
-
-Prior to my time on the R&D team, I was the sole developer for Control Group’s marketing team. I built the company website from the ground up using Jekyll (a static site generator) with a staging site on Github, while using a Jenkins job to push to an S3 bucket, resulting in exceptionally fast page load speeds. I built the company blog using Wordpress, developing a theme based on Twitter Bootstrap. 
-
-###Productivity Boost Using Google Apps Script
-- [Blog Post][6]
-=======
 I am a self-taught software engineer, specializing in the web. I am seeking an opportunity to further my exploration of what one can do with creative applications of the web. I am seeking something full time, at a company where experimentation is encouraged, and work-life balance is valued. 
 
 ####Experience Overview
@@ -45,8 +12,8 @@ My most recent experience was on the Research and Development team at tech consu
 ####Edward M. Kennedy Institute for the US Senate
 Interactive Museum
 
-[Case Study >][2]
-[Video >][3]
+- [Case Study >][2]
+- [Video >][3]
 
  - Single page web apps
  - Built with SASS, Grunt, AngularJS, Ractive.js, and vanilla JS
@@ -57,8 +24,8 @@ My favorite project was the museum which opened this year in March, which was pa
 ####World Wide Group 
 High Tech Sales Office
 
-[Case Study >][4]
-[Video >][5]
+- [Case Study >][4]
+- [Video >][5]
 
  - Chrome packaged web app
  - Javascript state machine communicates with RFID readers using HTTP
@@ -67,7 +34,7 @@ Before the museum, I worked on the World Wide Group’s high tech sales office. 
 
 ####Company Website
 
-[Blog Post >][6]
+- [Blog Post >][6]
 
  - Jekyll, static site generator
  - Built with LESS and jQuery
@@ -77,27 +44,16 @@ Before the museum, I worked on the World Wide Group’s high tech sales office. 
 Prior to my time on the R&D team, I was the sole developer for Control Group’s marketing team. I built the company website from the ground up using Jekyll with a staging site on Github, while using a Jenkins job to push to an S3 bucket, resulting in exceptionally fast page load speeds. I built the company blog using Wordpress, developing a theme based on Twitter Bootstrap. 
 
 ####Productivity Boost Using Google Apps Script
-[Blog Post >][7]
+
+- [Blog Post >][7]
 
  - Google Apps Script
  - Integrates with Zendesk API
->>>>>>> polymer
 
 Since the marketing team was small at the time, I developed an app for fielding incoming requests for work related to the website, blog, asset management, and other various tasks. I used Google Apps Script (which essentially is modified Javascript with heightened access to Google products) to create a form that stored results in a spreadsheet, and automatically emailed reminders to my team. The productivity boost was significant and even more important, it didn’t require extensive upkeep to the codebase.
 
 I later expanded my script for use with Zendesk and open sourced it. My blog post was featured on Zendesk’s website as a featured community tip. The app integrated Zendesk and Google Spreadsheets without the need for coding knowledge, and automated email notifications based on Zendesk due date fields.
 
-<<<<<<< HEAD
-###Branding Continuity and Marketing Drive
-More on the marketing front, I exhaustively applied style guides to a myriad of documents for both internal and external use after surveying dozens of use cases spanning business development, product development, and enterprise services. I established a company-wide archive of marketing materials along with guides and structure which encouraged wide adoption across departments while maintaining organization using Google Drive.
-
-  [1]: http://www.controlgroup.com/edward-m-kennedy-institute.html
-  [2]: https://vimeo.com/123413904
-  [3]: http://www.controlgroup.com/world-wide-group.html
-  [4]: https://vimeo.com/117630050
-  [5]: http://blog.controlgroup.com/2012/10/19/controlgroup-com-built-using-jekyll
-  [6]: https://www.zendesk.com/blog/community-tip-connecting-zendesk-google-spreadsheets
-=======
 ####Branding Continuity and Marketing Drive
 More on the marketing front, I exhaustively applied style guides to a myriad of documents for both internal and external use after surveying dozens of use cases spanning business development, product development, and enterprise services. I established a company-wide archive of marketing materials along with guides and structure which encouraged wide adoption across departments while maintaining organization using Google Drive.
 
@@ -107,4 +63,4 @@ More on the marketing front, I exhaustively applied style guides to a myriad of 
   [5]: https://vimeo.com/117630050
   [6]: http://blog.controlgroup.com/2012/10/19/controlgroup-com-built-using-jekyll
   [7]: https://www.zendesk.com/blog/community-tip-connecting-zendesk-google-spreadsheets
->>>>>>> polymer
+
