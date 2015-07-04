@@ -65,7 +65,7 @@ paper-fab {
 #drawerPanel, [drawer] {
 	background-color: #21CA8F;
 }
-core-item {
+paper-item {
 	font-family: {{ site.data.colors.navfont }}, sans-serif;
 }
 .title, .title a {

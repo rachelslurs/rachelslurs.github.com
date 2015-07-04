@@ -3,46 +3,54 @@
   {% include head.html %}
   <body unresolved fullbleed>
     <template is="auto-binding">
+
+       <!-- Keyboard nav controller. -->
+      <core-a11y-keys id="keys" target="{{selectedPage}}"
+                  keys="up down left right space space+shift"
+                  on-keys-pressed="{{keyHandler}}"></core-a11y-keys>
       <core-scaffold id="scaffold">
-        <nav>
-          <core-toolbar>
-            <span>{{ site.title }}</span>
-          </core-toolbar>
-          {% raw %}
-            <core-menu selected="{{route}}" valueattr="hash" selectedModel="{{selectedPage}}">
-              <template repeat="{{page in pages}}">
-                <paper-item hash="{{page.hash}}" noink>
-                  <core-icon icon="label-outline"></core-icon>
-                  <a href="#{{page.url}}">{{page.name}}</a>
-                </paper-item>
-              </template>
-            </core-menu>
-          {% endraw %}
-        </nav>
-        <core-toolbar tool flex>
-          <div flex>{{selectedPage.page.title}}</div>
-          <core-icon-button icon="mail"></core-icon-button>
+      <core-header-panel navigation flex mode="seamed">
+        <core-toolbar>
+          <h1>{{ site.title }}</h1>
+          <span>Front End Software Engineer</span>
         </core-toolbar>
-        <div layout fit>
-          {% raw %}
-            <core-animated-pages selected="{{route}}" valueattr="hash" transitions="slide-from-right">
-              <template repeat="{{page in pages}}">
-                <section hash="{{page.hash}}">
-                  <div>
+        {% raw %}
+          <core-menu selected="{{route}}" valueattr="hash" selectedModel="{{selectedPage}}">
+            <template repeat="{{page in pages}}">
+              <paper-item hash="{{page.hash}}">
+                <core-icon icon="label-outline"></core-icon>
+                <a href="#{{page.url}}">{{page.name}}</a>
+              </paper-item>
+            </template>
+          </core-menu>
+        {% endraw %}
+      </core-header-panel>
+      <core-toolbar tool flex>
+        <div flex>{{selectedPage.page.title}}</div>
+        <core-icon-button icon="mail"></core-icon-button>
+      </core-toolbar>
+      <div layout horizontal center-center fit>
+        {% raw %}
+          <core-animated-pages selected="{{route}}" valueattr="hash" transitions="slide-from-right">
+            <template repeat="{{page in pages}}">
+              <section hash="{{page.hash}}" layout vertical center-center>
+                <div>
                   <core-ajax id="ajax" auto url="{{selectedPage.page.url}}"
                              handleAs="document" on-core-response="{{onResponse}}">
                   </core-ajax>
                 </div>
-                </section>
-              </template>
-              
-            </core-animated-pages>
-          {% endraw %}
-        </div>
-      </core-scaffold>
-    </template>
+              </section>
+            </template>    
+          </core-animated-pages>
+        {% endraw %}
+      </div>
+    </core-scaffold>
+  </template>
     <script>
+    (function() {
+      "use strict";
       var template = document.querySelector('template[is="auto-binding"]');
+      var DEFAULT_ROUTE = 'about';
       template.pages = [
         {name: 'About', hash: 'about', url: 'about'},
         {name: 'Blog', hash: 'blog', url: 'blog'},
@@ -51,13 +59,50 @@
         {name: 'EMKI', hash: 'emki', url: 'emki'},
         {name: 'Interactive Sales Office', hash: 'worldwide', url: 'worldwide'}
       ];
+      template.addEventListener('template-bound', function(e) {
+        var keys = document.querySelector('#keys');
+
+        // Allow selecting pages by num keypad. Dynamically add
+        // [1, template.pages.length] to key mappings.
+        var keysToAdd = Array.apply(null, template.pages).map(function(x, i) {
+          return i + 1;
+        }).reduce(function(x, y) {
+          return x + ' ' + y;
+        });
+        keys.keys += ' ' + keysToAdd;
+
+        this.route = this.route || DEFAULT_ROUTE; // Select initial route.
+      });
       template.onResponse = function(e, detail, sender) {
       var article = detail.response.querySelector('body');
 
       var pages = document.querySelector('section.core-selected');
       this.injectBoundHTML(article.innerHTML,
-                           pages.firstElementChild);
+                             pages.firstElementChild);
+      };
+      template.keyHandler = function(e, detail, sender) {
+      var pages = document.querySelector('#pages');
+
+      switch (detail.key) {
+        case 'left':
+        case 'up':
+          pages.selectPrevious();
+          break;
+        case 'right':
+        case 'down':
+          pages.selectNext();
+          break;
+        case 'space':
+          detail.shift ? pages.selectPrevious() : pages.selectNext();
+          break;
+      }
     };
-    </script>
-  </body>
+    template.menuItemSelected = function(e, detail, sender) {
+      if (detail.isSelected) {
+        document.querySelector('#scaffold').closeDrawer();
+      }
+    };
+  })();
+</script>
+</body>
 </html>
