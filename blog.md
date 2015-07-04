@@ -1,7 +1,8 @@
 ---
 layout: list
 title: Blog
-permalink: /blog/
+permalink: blog/
 ---
 
+blog test
 {{content}}

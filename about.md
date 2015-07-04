@@ -1,7 +1,7 @@
 ---
 layout: content
 title: About
-permalink: /about/
+permalink: about/
 ---
 
 I am a self-taught software engineer, specializing in the web. I am seeking an opportunity to further my exploration of what one can do with creative applications of the web. I am seeking something full time, at a company where experimentation is encouraged, and work-life balance is valued. 

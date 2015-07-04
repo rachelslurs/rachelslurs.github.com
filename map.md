@@ -1,8 +1,7 @@
 ---
 layout: work
 title: "Mapping OSHA Data"
-date: 2015-05-30T21:28:46-04:00
-permalink: map
+permalink: map/
 client: "Personal"
 tech: "NodeJS web scraper, OpenRefine, CartoDB"
 ---

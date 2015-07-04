@@ -1,7 +1,7 @@
 ---
 layout: list
 title: Bookmarks
-permalink: /bookmarks/
+permalink: bookmarks/
 ---
 
 {{content}}

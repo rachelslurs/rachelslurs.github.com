@@ -1,9 +1,8 @@
 ---
 layout: work
 title: "Edward M. Kennedy Institute for the US Senate"
-date: 2015-04-02T21:58:48-04:00
 client: "EMKI"
-permalink: emki
+permalink: emki/
 tech: "Nexus 7 tablets, AngularJS, Ractive, NodeJS, Web Sockets"
 press-title-1: "Edward M. Kennedy Institute Aims to Teach Collaboration"
 press-link-1: "http://www.nytimes.com/2015/02/09/arts/design/edward-m-kennedy-institute-aims-to-teach-collaboration.html"

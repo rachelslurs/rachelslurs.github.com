@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tic Tac Toe: Understanding The Minimax Algorithm
+title: Tic Tac Toe Understanding The Minimax Algorithm
 date: 2015-06-13 01:34
 linkurl: http://neverstopbuilding.com/minimax
 ---

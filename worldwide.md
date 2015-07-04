@@ -1,9 +1,8 @@
 ---
 layout: work
 title: "Interactive Sales Office"
-date: 2015-04-02T21:28:46-04:00
 client: "World Wide Group"
-permalink: worldwide
+permalink: worldwide/
 tech: "Chrome Web App, 4K Screens, Dual RFID Readers"
 press-title-1: "Selling Condos With a Tap and a Swipe"
 press-link-1: "http://www.nytimes.com/2014/12/14/realestate/selling-condos-with-a-tap-and-a-swipe-.html"

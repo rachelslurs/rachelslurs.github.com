@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body unresolved>
-    <site-scaffold label="{{ site.title }}">
-      {% for page in site.pages %}
-        {% if page.layout == 'content' %}
-          <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
-        {% endif %}
+  <body unresolved fullbleed>
+    <template is="auto-binding">
+      <core-scaffold id="scaffold">
+        <nav>
+          <core-toolbar>
+            <span>{{ site.title }}</span>
+          </core-toolbar>
+          {% raw %}
+            <core-menu selected="{{route}}" valueattr="hash" selectedModel="{{selectedPage}}">
+              <template repeat="{{page in pages}}">
+                <paper-item hash="{{page.hash}}" noink>
+                  <core-icon icon="label-outline"></core-icon>
+                  <a href="#{{page.url}}">{{page.name}}</a>
+                </paper-item>
+              </template>
+            </core-menu>
+          {% endraw %}
+        </nav>
+        <core-toolbar tool flex>
+          <div flex>{{selectedPage.page.title}}</div>
+          <core-icon-button icon="mail"></core-icon-button>
+        </core-toolbar>
+        <div layout fit>
+          {% raw %}
+            <core-animated-pages selected="{{route}}" valueattr="hash" transitions="slide-from-right">
+              <template repeat="{{page in pages}}">
+                <section hash="{{page.hash}}">
+                  <div>
+                  <core-ajax id="ajax" auto url="{{selectedPage.page.url}}"
+                             handleAs="document" on-core-response="{{onResponse}}">
+                  </core-ajax>
+                </div>
+                </section>
+              </template>
+              
+            </core-animated-pages>
+          {% endraw %}
+        </div>
+      </core-scaffold>
+    </template>
+    <script>
+      var template = document.querySelector('template[is="auto-binding"]');
+      template.pages = [
+        {name: 'About', hash: 'about', url: 'about'},
+        {name: 'Blog', hash: 'blog', url: 'blog'},
+        {name: 'Bookmarks', hash: 'bookmarks', url: 'bookmarks'},
+        {name: 'Mapping OSHA Data', hash: 'map', url: 'map'},
+        {name: 'EMKI', hash: 'emki', url: 'emki'},
+        {name: 'Interactive Sales Office', hash: 'worldwide', url: 'worldwide'}
+      ];
+      template.onResponse = function(e, detail, sender) {
+      var article = detail.response.querySelector('body');
 
-        {% if page.layout == 'list' %}
-          <core-item label="{{ page.title }}" url="{{ page.baseurl }}{{ page.url }}"></core-item>
-        {% endif %}
-      {% endfor %}
-      {% for post in site.posts %}
-        {% if post.layout == 'work' %}
-          <core-item label="{{ post.title }}" url="{{ site.baseurl }}{{ post.url }}">
-          </core-item>
-        {% endif %}
-      {% endfor %}
-    </site-scaffold>
+      var pages = document.querySelector('section.core-selected');
+      this.injectBoundHTML(article.innerHTML,
+                           pages.firstElementChild);
+    };
+    </script>
   </body>
 </html>
