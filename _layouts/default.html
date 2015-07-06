@@ -29,16 +29,16 @@
         </core-menu>
       </div>
     <div flex page-title>{{selectedPage.page.name}}</div>
-      <div layout horizontal center-center fit pages>
-      <core-animated-pages id="pages" selected="{{route}}" valueattr="hash"
-                             transitions="slide-from-right">
-        <template repeat="{{page, i in pages}}">
-          <section hash="{{page.hash}}">
-            <div>{{page.name}}</div>
-          </section>
-        </template>
-      </core-animated-pages>
-    </div>
+      <div layout horizontal center-center fit pages transitions="slide-from-right">
+        <core-animated-pages id="pages" selected="{{route}}" valueattr="hash"
+                               transitions="slide-from-bottom">
+          <template repeat="{{page, i in pages}}">
+            <section hash="{{page.hash}}">
+              <div slide-from-bottom></div>
+            </section>
+          </template>
+        </core-animated-pages>
+      </div>
     </site-scaffold>
     <script>
       (function() {
