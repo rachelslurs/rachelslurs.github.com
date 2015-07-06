@@ -1,6 +1,6 @@
 ---
 layout: work
-title: "Edward M. Kennedy Institute for the US Senate"
+title: "Interactive Museum"
 date: 2015-04-02T21:58:48-04:00
 client: "EMKI"
 tech: "Nexus 7 tablets, AngularJS, Ractive, NodeJS, Web Sockets"
