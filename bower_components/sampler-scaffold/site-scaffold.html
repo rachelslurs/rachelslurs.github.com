@@ -38,63 +38,29 @@ of the scaffold.
 <link rel="import" href="../core-icon-button/core-icon-button.html">
 
 <polymer-element name="site-scaffold" attributes="label responsiveWidth">
-<template>
-
-  <link rel="stylesheet" href="scaffold.css">
-
-  <core-drawer-panel id="drawerPanel" narrow="{{narrow}}" drawerWidth="320px" responsiveWidth="{{responsiveWidth}}">
-
-    <core-header-panel id="mainHeaderPanel" main mode="{{narrow ? 'waterfall' : 'cover'}}" shadow>
-
-      <core-toolbar class="{{ {'tall' : !narrow} | tokenList }}">
-        <content select=".menuButton" on-tap="{{togglePanel}}">
-          <core-icon-button class="menuButton fallback" icon="menu"></core-icon-button>
-        </content>
-        <div hidden?="{{!narrow}}">{{item.label}}</div>
-
-      </core-toolbar>
-      
-      <div id="card" on-transitionend="{{cardTransitionDone}}" hidden?="{{!item}}">
-
-        <div class="element-label" hidden?="{{narrow}}">{{item.label}}</div>
-
-        <div id="frameContainer">
-          <iframe id="frame" on-load="{{frameLoaded}}"></iframe>
-        </div>
-        
-      </div>
-      
-    </core-header-panel>
-
-    <core-header-panel drawer>
-
-      <core-toolbar class="{{ {'tall' : !narrow} | tokenList }}">
-        <div class="top main-label fit">{{label}}</div>
-        <div class="bottom main-label fit">Front End Software Engineer</div>
-      </core-toolbar>
-      
-      <core-menu id="menu" on-core-select="{{menuSelect}}">
-        <content></content>
-      </core-menu>
-
-    </core-header-panel>
-
-  </core-drawer-panel>
-
-</template>
+  <template>
+    <link rel="stylesheet" href="scaffold.css">
+    <core-drawer-panel id="drawerPanel" narrow="{{narrow}}" drawerWidth="320px" responsiveWidth="{{responsiveWidth}}">
+      <core-header-panel id="mainHeaderPanel" drawer flex shadow class="{{ {'tall' : !narrow} | tokenList }}">
+        <core-toolbar>
+          <div class="top main-label fit">{{label}}</div>
+          <div class="bottom main-label fit">Front End Software Engineer</div>
+        </core-toolbar>
+        <content select="[menu]"></content>
+      </core-header-panel>
+      <core-header-panel main shadow class="{{ {'tall' : !narrow} | tokenList }}">
+        <core-toolbar>
+          <content select=".menuButton" on-tap="{{togglePanel}}">
+            <core-icon-button class="menuButton fallback" icon="menu"></core-icon-button>
+          </content>
+          <content select="[page-title]"></content>
+        </core-toolbar>
+          <content select="[pages]"></content>
+      </core-header-panel>
+    </core-drawer-panel>
+  </template>
 <script>
-
   Polymer('site-scaffold', {
-    
-    /**
-     * When the browser window size is smaller than the `responsiveWidth`, 
-     * `site-scaffold` changes to a narrow layout. In narrow layout, 
-     * the drawer will be stacked on top of the main panel.
-     *
-     * @attribute responsiveWidth
-     * @type string
-     */
-    responsiveWidth: '860px',
     
     /**
      * site label.
@@ -102,46 +68,105 @@ of the scaffold.
      * @attribute label
      * @type string
      */
+      publish: {
+      
+      /**
+       * Width of the drawer panel.
+       *
+       * @attribute drawerWidth
+       * @type string
+       * @default '256px'
+       */
+      drawerWidth: '256px',
+      
+      /**
+       * When the browser window size is smaller than the `responsiveWidth`, 
+       * `core-drawer-panel` changes to a narrow layout. In narrow layout, 
+       * the drawer will be stacked on top of the main panel.
+       *
+       * @attribute responsiveWidth
+       * @type string
+       * @default '600px'
+       */    
+      responsiveWidth: '600px',
+      
+      /**
+       * If true, position the drawer to the right. Also place menu icon to
+       * the right of the content instead of left.
+       *
+       * @attribute rightDrawer
+       * @type boolean
+       * @default false
+       */
+      rightDrawer: false,
+
+      /**
+       * If true, swipe to open/close the drawer is disabled.
+       *
+       * @attribute disableSwipe
+       * @type boolean
+       * @default false
+       */
+      disableSwipe: false,
+  
+      /**
+       * Used to control the header and scrolling behaviour of `core-header-panel`
+       *
+       * @attribute mode
+       * @type string
+       * @default 'seamed'
+       */     
+      mode: {value: 'seamed', reflect: true}
+    },
+    
     
     ready: function() {
-      this.boundResizeFrame = this.resizeFrame.bind(this);
-      window.addEventListener('resize', this.updateFrameHeight.bind(this));
-      window.addEventListener('hashchange', this.parseLocationHash.bind(this));
+      console.log('ready');
     },
     
     domReady: function() {
-      this.async(function() {
-        this.parseLocationHash();
-      }, null, 300);
+      console.log('domready');
+    },
+
+    
+    detached: function() {
+    },
+
+    /**
+     * Toggle the drawer panel
+     * @method togglePanel
+     */    
+    togglePanel: function() {
+      this.$.drawerPanel.togglePanel();
+    },
+
+    /**
+     * Open the drawer panel
+     * @method openDrawer
+     */      
+    openDrawer: function() {
+      this.$.drawerPanel.openDrawer();
+    },
+
+    /**
+     * Close the drawer panel
+     * @method closeDrawer
+     */     
+    closeDrawer: function() {
+      this.$.drawerPanel.closeDrawer();
+    },
+    /**
+     * Returns the scrollable element on the main area.
+     *
+     * @property scroller
+     * @type Object
+     */
+    get scroller() {
+      return this.$.headerPanel.scroller;
     },
     
-    parseLocationHash: function() {
-      var route = window.location.hash.slice(1);
-      for (var i = 0, item; item = this.$.menu.items[i]; i++) {
-        if (item.getAttribute('tag') === route) {
-          this.$.menu.selected = i;
-          return;
-        }
-      }
-      this.$.menu.selected = this.$.menu.selected || 0;
-    },
-    
-    menuSelect: function(e, detail) {
-      if (detail.isSelected) {
-        this.item = detail.item;
-        if (this.item.children.length) {
-          this.item.selected = 0;
-        }
-        this.item.tag = this.item.getAttribute('tag');
-        var url = this.item.getAttribute('url');
-        this.$.frame.contentWindow.location.replace(url);
-        window.location.hash = this.item.tag;
-        if (this.narrow) {
-          this.$.drawerPanel.closeDrawer();
-        } else {
-          this.animateCard();
-        }
-      }
+    scroll: function(e) {
+      this.fire('scroll', {target: e.detail.target}, this, false);
     },
     
     animateCard: function() {
@@ -167,47 +192,6 @@ of the scaffold.
       if (this.$.card.classList.contains('move-up')) {
         this.$.card.classList.remove('move-up');
         this.updateFrameHeight();
-      }
-    },
-    
-    togglePanel: function() {
-      this.$.drawerPanel.togglePanel();
-    },
-    
-    frameLoaded: function() {
-      if (!this.item) {
-        return;
-      }
-      this.$.frame.contentWindow.addEventListener('polymer-ready', function() {
-        setTimeout(this.updateFrameHeight.bind(this), 100);
-        this.$.frame.contentWindow.addEventListener('core-resize',
-          this.boundResizeFrame, false);
-      }.bind(this));
-    },
-
-    resizeFrame: function() {
-      this.job('resizeFrame', function() {
-        this.updateFrameHeight();
-      });
-    },
-    
-    updateFrameHeight: function() {
-      var frame = this.$.frame;
-      var doc = frame.contentDocument;
-      if (doc) {
-        var docElt = doc.documentElement;
-        // TODO(ffu); expose scroll info from header-panel
-        var pos = this.$.mainHeaderPanel.$.mainContainer.scrollTop;
-        frame.style.height = 'auto';
-        frame.style.height = docElt.scrollHeight + 'px';
-        if (doc.body) {
-          var s = doc.body.style;
-          s.overflow = 'hidden';
-          // to avoid the 'blinking bug'
-          // https://code.google.com/p/chromium/issues/detail?id=332024
-          s.webkitTransform = s.transform = 'translateZ(0)';
-        }
-        this.$.mainHeaderPanel.$.mainContainer.scrollTop = pos;
       }
     }
     
