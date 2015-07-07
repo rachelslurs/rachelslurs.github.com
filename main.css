@@ -51,7 +51,7 @@ color: #{{ site.data.colors.black }};
 section {
   padding: 20px 40px;
 }
-site-scaffold {
+paper-item, div[page-title] {
 	font-family: {{ site.data.colors.navfont }}, sans-serif;
 }
 paper-fab {
