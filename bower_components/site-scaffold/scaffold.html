@@ -1,0 +1,192 @@
+<!--
+`site-scaffold` provides a responsive layout for elements site.
+
+Exampler:
+
+    <site-scaffold label="HTML Input Elements">
+
+      <core-item label="String" url="demos/string.html"></core-item>
+      <core-item label="Checkbox" url="demos/checkbox.html"></core-item>
+      <core-item label="Radio" url="demos/radio.html"></core-item>
+      <core-item label="Range" url="demos/range.html"></core-item>
+      <core-item label="Color" url="demos/color.html"></core-item>
+    
+    </site-scaffold>
+
+Use `label` to set the site label and `responsiveWidth` to change the layout 
+of the scaffold.
+
+@element site-scaffold
+@homepage github.io
+-->
+
+<link rel="import" href="../core-toolbar/core-toolbar.html">
+<link rel="import" href="../core-drawer-panel/core-drawer-panel.html">
+<link rel="import" href="../core-header-panel/core-header-panel.html">
+<link rel="import" href="../core-item/core-item.html">
+<link rel="import" href="../core-menu/core-menu.html">
+<link rel="import" href="../core-menu/core-submenu.html">
+<link rel="import" href="../core-icon-button/core-icon-button.html">
+
+<polymer-element name="site-scaffold" attributes="label responsiveWidth">
+  <template>
+    <link rel="stylesheet" href="scaffold.css">
+    <core-drawer-panel id="drawerPanel" narrow="{{narrow}}" drawerWidth="320px" responsiveWidth="{{responsiveWidth}}">
+      <core-header-panel id="mainHeaderPanel" drawer flex shadow class="{{ {'tall' : !narrow} | tokenList }}">
+        <core-toolbar>
+          <div class="top main-label fit">{{label}}</div>
+          <div class="bottom main-label fit">Front End Software Engineer</div>
+        </core-toolbar>
+        <content select="[menu]"></content>
+      </core-header-panel>
+      <core-header-panel main shadow class="{{ {'tall' : !narrow} | tokenList }}">
+        <core-toolbar>
+          <content select=".menuButton" on-tap="{{togglePanel}}">
+            <core-icon-button class="menuButton fallback" icon="menu"></core-icon-button>
+          </content>
+          <content select="[page-title]"></content>
+        </core-toolbar>
+          <content select="[pages]"></content>
+      </core-header-panel>
+    </core-drawer-panel>
+  </template>
+<script>
+  Polymer('site-scaffold', {
+    
+    /**
+     * site label.
+     *
+     * @attribute label
+     * @type string
+     */
+      publish: {
+      
+      /**
+       * Width of the drawer panel.
+       *
+       * @attribute drawerWidth
+       * @type string
+       * @default '256px'
+       */
+      drawerWidth: '256px',
+      
+      /**
+       * When the browser window size is smaller than the `responsiveWidth`, 
+       * `core-drawer-panel` changes to a narrow layout. In narrow layout, 
+       * the drawer will be stacked on top of the main panel.
+       *
+       * @attribute responsiveWidth
+       * @type string
+       * @default '600px'
+       */    
+      responsiveWidth: '600px',
+      
+      /**
+       * If true, position the drawer to the right. Also place menu icon to
+       * the right of the content instead of left.
+       *
+       * @attribute rightDrawer
+       * @type boolean
+       * @default false
+       */
+      rightDrawer: false,
+
+      /**
+       * If true, swipe to open/close the drawer is disabled.
+       *
+       * @attribute disableSwipe
+       * @type boolean
+       * @default false
+       */
+      disableSwipe: false,
+  
+      /**
+       * Used to control the header and scrolling behaviour of `core-header-panel`
+       *
+       * @attribute mode
+       * @type string
+       * @default 'seamed'
+       */     
+      mode: {value: 'seamed', reflect: true}
+    },
+    
+    
+    ready: function() {
+      console.log('ready');
+    },
+    
+    domReady: function() {
+      console.log('domready');
+    },
+
+    
+    detached: function() {
+    },
+
+    /**
+     * Toggle the drawer panel
+     * @method togglePanel
+     */    
+    togglePanel: function() {
+      this.$.drawerPanel.togglePanel();
+    },
+
+    /**
+     * Open the drawer panel
+     * @method openDrawer
+     */      
+    openDrawer: function() {
+      this.$.drawerPanel.openDrawer();
+    },
+
+    /**
+     * Close the drawer panel
+     * @method closeDrawer
+     */     
+    closeDrawer: function() {
+      this.$.drawerPanel.closeDrawer();
+    },
+    /**
+     * Returns the scrollable element on the main area.
+     *
+     * @property scroller
+     * @type Object
+     */
+    get scroller() {
+      return this.$.headerPanel.scroller;
+    },
+    
+    scroll: function(e) {
+      this.fire('scroll', {target: e.detail.target}, this, false);
+    },
+    
+    animateCard: function() {
+      this.$.card.classList.remove('move-up');
+      this.$.card.style.display = 'none';
+      this.async(function() {
+        this.$.card.style.display = 'block';
+        this.moveCard(this.$.mainHeaderPanel.offsetHeight);
+        this.async(function() {
+          this.$.card.classList.add('move-up');
+          this.moveCard(null);
+        }, null, 300);
+      });
+    },
+    
+    moveCard: function(y) {
+      var s = this.$.card.style;
+      s.webkitTransform = s.transform = 
+          y ? 'translate3d(0, ' + y + 'px,0)' : '';
+    },
+    
+    cardTransitionDone: function() {
+      if (this.$.card.classList.contains('move-up')) {
+        this.$.card.classList.remove('move-up');
+        this.updateFrameHeight();
+      }
+    }
+    
+  });
+
+</script>
+</polymer-element>
