@@ -4,6 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+	<meta property="og:image" content="{{ site.baseurl }}/assets/preview.jpg" />
 	<link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/icons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/icons/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/icons/apple-icon-72x72.png">
