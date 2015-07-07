@@ -37,6 +37,7 @@ p > img {
 	 width: 200px;
 	 height: 200px;
 	 margin:0 auto;
+	 margin-top: -10px;
 	 display: block;
 	 border-radius: 100px;
 	 -webkit-border-radius: 100px;

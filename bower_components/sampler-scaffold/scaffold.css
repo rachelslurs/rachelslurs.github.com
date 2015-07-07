@@ -37,9 +37,9 @@ core-toolbar::shadow #bottomBar {
 
 .main-label {
   padding: 0 0 20px 60px;
-  font-size: 1rem;
+  font-size: .9rem;
   font-family: RobotoDraft, sans-serif;
-  font-weight: 300;
+  font-weight: 600;
 
 }
 .main-label:first-child {
