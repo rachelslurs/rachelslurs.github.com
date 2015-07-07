@@ -73,7 +73,7 @@ h2 {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 34px;
   padding-top: 30px;
   font-family: {{ site.data.colors.navfont }}, sans-serif;
   border-top: 1px solid rgba(0,0,0,0.12);
