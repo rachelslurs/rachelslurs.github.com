@@ -8,6 +8,47 @@ permalink: /resume/
 
 My most recent experience was on the Research and Development team at tech consultancy, Control Group. I worked with clients such as the ACLU, World Wide Group, and the Edward M. Kennedy Institute for the Senate.
 
+##Education
+
+<div horizontal justified layout>
+	<div flex two><b>Sarah Lawrence College</b>, Bachelors of Arts</div>
+	<div flex>2009</div>
+</div>
+<div horizontal justified layout>
+	<div flex two> Video, Photography, Art History, Literature, Economics</div>
+</div>
+
+
+
+
+##Timeline
+
+<div horizontal justified layout>
+	<div flex two><b>Software Engineer</b>, R&D, Control Group</div>
+	<div flex>2012 - 2015</div>
+</div>
+
+<div horizontal justified layout>
+	<div flex two><b>Assistant to Archivist</b>, Marian Goodman Gallery</div>
+	<div flex>2011 - 2012</div>
+</div>
+
+<div horizontal justified layout>
+	<div flex two><b>Freelance Web Developer</b></div>
+	<div flex>2009 - 2012</div>
+</div>
+
+<div horizontal justified layout>
+	<div flex two><b>Director of Marketing & Promotions</b>, Comix</div>
+	<div flex>2010 - 2011</div>
+</div>
+
+<div horizontal justified layout>
+	<div flex two><b>Research, Strategy, and Publicity Intern</b>, Magnify.net</div>
+	<div flex>2009 - 2010</div>
+</div>
+
+
 ##Projects
 
 ###Edward M. Kennedy Institute for the US Senate

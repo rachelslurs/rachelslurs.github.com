@@ -31,7 +31,7 @@
       <div flex page-title>
         <div class="bottom main-label fit">{{selectedPage.page.name}}</div>
       </div>
-      <div layout horizontal center-center fit pages transitions="slide-from-right">
+      <div layout horizontal center-center fit pages>
         <core-animated-pages id="pages" selected="{{route}}" valueattr="hash"
                                transitions="slide-from-bottom">
           <template repeat="{{page, i in pages}}">

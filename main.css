@@ -26,9 +26,9 @@ core-menu {
   padding: 0;
   margin: 0;
 }
-/*paper-item /deep/ .button-content {
-	padding:0;
-}*/
+paper-item /deep/ .button-content {
+  padding: 0.9em 0;
+}
 /* menu item */
 core-menu paper-item {
   padding-left: 60px;
@@ -73,7 +73,15 @@ h2 {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
+  margin-top: 30px;
   padding-top: 30px;
+  font-family: {{ site.data.colors.navfont }}, sans-serif;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+h2#experience-overview {
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: 0px solid rgba(0,0,0,0.12);
 }
 h3 {
 	font-family: {{ site.data.colors.navfont }}, sans-serif;
@@ -189,6 +197,9 @@ core-animated-pages > * {
 	font-size: inherit;
 	overflow-y: auto;
 	padding: 30px;
+}
+html /deep/ [layout][justified] {
+	margin-bottom:8px;
 }
 /*h1 {
 font-size: 4.5rem;
