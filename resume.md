@@ -19,9 +19,7 @@ My most recent experience was on the Research and Development team at tech consu
 </div>
 
 
-
-
-##Timeline
+##Work
 
 <div horizontal justified layout>
 	<div flex two><b>Software Engineer</b>, R&D, Control Group</div>
