@@ -175,7 +175,7 @@ color: #{{ site.data.colors.white }};
 text-decoration: none;
 }
 core-animated-pages {
-  width: 85%;
+  width: 90%;
   height: 85%;
   -webkit-user-select: none;
   overflow: hidden;
