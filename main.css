@@ -26,7 +26,9 @@ core-menu {
   padding: 0;
   margin: 0;
 }
-
+paper-item /deep/ .button-content {
+	padding:0;
+}
 /* menu item */
 core-menu paper-item {
   padding-left: 60px;
