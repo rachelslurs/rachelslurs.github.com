@@ -10,7 +10,7 @@ I am a 29 year old software engineer, specializing in the front end of the web. 
 
 I am originally from Buffalo, New York. In my free time I enjoy going to stand up comedy shows, eating delicious foods, and perusing all of the cultural wealth New York City has to offer.
 
-##About this site
+###About this site
 
 I am a big fan of [Polymer][1] and have built this site using web components with a significant nod to [Google's Material Design][2]. It is hosted on [Github Pages][3] using [Jekyll][4].
 

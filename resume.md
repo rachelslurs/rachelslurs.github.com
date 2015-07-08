@@ -4,6 +4,8 @@ title: Resumé
 permalink: /resume/
 ---
 
+I am a 29 year old software engineer, specializing in the front end of the web. I am seeking an opportunity to further my exploration of what one can do with creative applications of the web. I am seeking something full time, at a company where experimentation is encouraged, and work-life balance is valued. 
+
 ##Experience Overview
 
 My most recent experience was on the Research and Development team at tech consultancy, Control Group. I worked with clients such as the ACLU, World Wide Group, and the Edward M. Kennedy Institute for the Senate.
@@ -58,8 +60,7 @@ My most recent experience was on the Research and Development team at tech consu
 
 My favorite project was the museum which opened this year in March, which was part of Edward Kennedy’s vision for a museum to teach children about the United States Senate in an exciting and immersive way. I worked onsite in the month prior to the opening and was amazed at how empty the building appeared without our tech, with the exception of the impeccably ornate replica of the Senate chamber. The entire museum is web based: from the Android tablets each visitor uses to interact with the museum, to the enormous projections on the wall that make up most of the museum’s exhibits. 
 
-**[Case Study][2]**
-**[Video][3]**
+<iframe src="https://player.vimeo.com/video/123413904?title=0&byline=0&portrait=0" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ###World Wide Group 
 *High Tech Sales Office*
@@ -69,8 +70,7 @@ My favorite project was the museum which opened this year in March, which was pa
 
 Before the museum, I worked on the World Wide Group’s high tech sales office. I created a Chrome packaged app that responded to two RFID readers to change the views on an 80 inch 4k screen. The main challenges here were the animations as well. Since it was a webview on a pixel dense screen, the paint issues required significant troubleshooting, but ultimately, it ended up being a very elegant solution and paired nicely with an extravagant rotating 12 foot model of the building, that responded to the RFID readers as well. 
 
-**[Case Study][4]**
-**[Video][5]**
+<iframe src="https://player.vimeo.com/video/117630050?title=0&byline=0&portrait=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ###Company Website
 
@@ -105,3 +105,4 @@ More on the marketing front, I exhaustively applied style guides to a myriad of 
   [6]: http://blog.controlgroup.com/2012/10/19/controlgroup-com-built-using-jekyll
   [7]: https://www.zendesk.com/blog/community-tip-connecting-zendesk-google-spreadsheets
 
+[profile]: {{ site.baseurl }}/assets/rachel-cantor.jpg "Rachel Cantor"
