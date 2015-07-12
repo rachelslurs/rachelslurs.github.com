@@ -6,7 +6,7 @@ permalink: /about/
 
 ![Rachel Cantor][profile]
 
-I am a 29 year old software engineer, specializing in the front end of the web. I am seeking an opportunity to further my exploration of what one can do with creative applications of the web. I am seeking something full time, at a company where experimentation is encouraged, and work-life balance is valued. 
+I am a 29 year old software engineer, specializing in the front end of the web. I am seeking an opportunity to further my exploration of what one can do with creative applications of the web.
 
 I am originally from Buffalo, New York. In my free time I enjoy going to stand up comedy shows, eating delicious foods, and perusing all of the cultural wealth New York City has to offer.
 
