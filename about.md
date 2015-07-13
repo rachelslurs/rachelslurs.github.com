@@ -1,7 +1,7 @@
 ---
 layout: content
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 ![Rachel Cantor][profile]
