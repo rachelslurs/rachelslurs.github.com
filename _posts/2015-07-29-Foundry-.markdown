@@ -1,0 +1,9 @@
+---
+layout: post
+title: Foundry ∞
+date: 2015-07-29 20:01
+linkurl: http://thoughtbot.github.io/foundry/#gallery
+---
+
+> Providing a new generation of vector assets and infinite possibility for the interactive web and mobile applications from the designers at thoughtbot. 
+
