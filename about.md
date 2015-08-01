@@ -6,7 +6,11 @@ permalink: /about/
 
 ![Rachel Cantor][profile]
 
-I am a 29 year old software engineer, specializing in the front end of the web. I am seeking an opportunity to further my exploration of what one can do with creative applications of the web.
+True story: My first website was a beanie babies fan page at age 11, and my first internship was at an advertising agency at 13 where I created Flash sites. Over the years, I'd always been a front end hobbyist, but 5 years ago, after I'd left working in Comedy and later, a prestigious art gallery as an Archivist, I returned to my original love of web development.
+
+My recent role at Control Group heightened my appreciation for using the power of the web to do things we thought were only possible in native applications. I have a lot of ideas regarding how important UX is to Front End Engineers and am constantly trying to explore new ways to satisfy users by utilizing all of the new web technologies has to offer - things like service workers, web components, offline support, push notifications, etc. 
+
+>I am seeking an employer that truly believes the web is the most important platform there is and wants to support my endless desire to deliver delightful user experiences through code.
 
 I am originally from Buffalo, New York. In my free time I enjoy going to stand up comedy shows, eating delicious foods, and perusing all of the cultural wealth New York City has to offer.
 

@@ -92,10 +92,23 @@ h3 {
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
-h4, h5, h6 {
+h4 {
 	font-family: {{ site.data.colors.navfont }}, sans-serif;
 font-weight: 400;
 color: #{{ site.data.colors.black }};
+}
+h5 {
+	font-style:italic;
+	font-size: 1.3em;
+}
+blockquote {
+	background-color: #FFF9C4;
+	font-weight: 400;
+    padding: 5px 30px;
+    margin: 35px 50px;
+}
+blockquote p {
+	font-size:14px;
 }
 p > strong > a {
 	font-weight: normal;
