@@ -34,7 +34,7 @@ core-toolbar::shadow #bottomBar {
   font-weight: 600;
 
 }
-.main-label:first-child {
+.top.main-label:first-child {
   font-family: "aw-conqueror-carved-one", sans-serif;
   font-size: 2rem;
   line-height: 1.8rem;
