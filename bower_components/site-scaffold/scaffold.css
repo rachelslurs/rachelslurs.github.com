@@ -13,7 +13,7 @@
 }
 
 core-toolbar {
-  background-color: #4A148C;
+  background-color: #E64A19;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -26,8 +26,12 @@ core-toolbar.medium-tall {
 core-toolbar::shadow #bottomBar {
   height: 80px;
 }
-
-.main-label {
+.flex.page-title > .bottom .main-label {
+  padding: 0 0 20px 60px;
+  font-family: "aw-conqueror-carved-one", sans-serif;
+  text-transform: uppercase;
+}
+core-toolbar > .toolbar-tools > .main-label, core-toolbar > .main-label {
   padding: 0 0 20px 60px;
   font-size: .9rem;
   font-family: RobotoDraft, sans-serif;
@@ -64,7 +68,6 @@ polyfill-next-selector { content: 'core-menu#menu core-item.core-selected'; }
 /* card */
 #pages {
   display: block;
-  margin: 64px 120px 60px 0;
   background-color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   border-radius: 2px;
