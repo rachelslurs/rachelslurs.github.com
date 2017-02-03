@@ -11,3 +11,5 @@ date: 2017-02-02 18:38
     </iframe>
 
 <small>We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites</small>
+
+<a target="_blank" href="https://www.amazon.com/b/?node=3063530011&ref_=assoc_tag_ph_1394216334436&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=rachelslurs-20&linkId=56c70ff99160a5da56688e88fa57d0e0">Shop Amazon Gift Cards. Any Occasion. No Expiration.</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=rachelslurs-20&l=pf4&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
