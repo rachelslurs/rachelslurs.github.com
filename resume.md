@@ -4,7 +4,7 @@ title: Resumé
 permalink: /resume/
 ---
 
-I am a 29 year old software engineer, specializing in the front end of the web. I am seeking an opportunity to further my exploration of what one can do with creative applications of the web.
+I am a 31 year old software engineer, specializing in the front end of the web.
 
 ##Experience Overview
 
@@ -19,7 +19,6 @@ My most recent experience was on the Research and Development team at tech consu
 <div horizontal justified layout>
 	<div flex two> Video, Photography, Art History, Literature, Economics</div>
 </div>
-
 
 ##Work
 
@@ -48,7 +47,6 @@ My most recent experience was on the Research and Development team at tech consu
 	<div flex>2009 - 2010</div>
 </div>
 
-
 ##Projects
 
 ###Edward M. Kennedy Institute for the US Senate
@@ -58,17 +56,17 @@ My most recent experience was on the Research and Development team at tech consu
  - Built with SASS, Grunt, AngularJS, Ractive.js, and vanilla JS
  - Used both standard AJAX and web sockets for cross platform communication
 
-My favorite project was the museum which opened this year in March, which was part of Edward Kennedy’s vision for a museum to teach children about the United States Senate in an exciting and immersive way. I worked onsite in the month prior to the opening and was amazed at how empty the building appeared without our tech, with the exception of the impeccably ornate replica of the Senate chamber. The entire museum is web based: from the Android tablets each visitor uses to interact with the museum, to the enormous projections on the wall that make up most of the museum’s exhibits. 
+My favorite project was the museum which opened this year in March, which was part of Edward Kennedy’s vision for a museum to teach children about the United States Senate in an exciting and immersive way. I worked onsite in the month prior to the opening and was amazed at how empty the building appeared without our tech, with the exception of the impeccably ornate replica of the Senate chamber. The entire museum is web based: from the Android tablets each visitor uses to interact with the museum, to the enormous projections on the wall that make up most of the museum’s exhibits.
 
 <iframe src="https://player.vimeo.com/video/123413904?title=0&byline=0&portrait=0" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-###World Wide Group 
+###World Wide Group
 *High Tech Sales Office*
 
  - Chrome packaged web app
  - Javascript state machine communicates with RFID readers using HTTP
 
-Before the museum, I worked on the World Wide Group’s high tech sales office. I created a Chrome packaged app that responded to two RFID readers to change the views on an 80 inch 4k screen. The main challenges here were the animations as well. Since it was a webview on a pixel dense screen, the paint issues required significant troubleshooting, but ultimately, it ended up being a very elegant solution and paired nicely with an extravagant rotating 12 foot model of the building, that responded to the RFID readers as well. 
+Before the museum, I worked on the World Wide Group’s high tech sales office. I created a Chrome packaged app that responded to two RFID readers to change the views on an 80 inch 4k screen. The main challenges here were the animations as well. Since it was a webview on a pixel dense screen, the paint issues required significant troubleshooting, but ultimately, it ended up being a very elegant solution and paired nicely with an extravagant rotating 12 foot model of the building, that responded to the RFID readers as well.
 
 <iframe src="https://player.vimeo.com/video/117630050?title=0&byline=0&portrait=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -79,7 +77,7 @@ Before the museum, I worked on the World Wide Group’s high tech sales office. 
  - Builds from Github Pages to AWS S3 bucket using a Jenkins job
  - Custom Wordpress theme using Twitter Bootstrap
 
-Prior to my time on the R&D team, I was the sole developer for Control Group’s marketing team. I built the company website from the ground up using Jekyll with a staging site on Github, while using a Jenkins job to push to an S3 bucket, resulting in exceptionally fast page load speeds. I built the company blog using Wordpress, developing a theme based on Twitter Bootstrap. 
+Prior to my time on the R&D team, I was the sole developer for Control Group’s marketing team. I built the company website from the ground up using Jekyll with a staging site on Github, while using a Jenkins job to push to an S3 bucket, resulting in exceptionally fast page load speeds. I built the company blog using Wordpress, developing a theme based on Twitter Bootstrap.
 
 **[Blog Post][6]**
 
