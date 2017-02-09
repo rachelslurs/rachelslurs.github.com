@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-###[myname] at gmail.com
+### [myname] at gmail.com
 
 Or you can find me one of these places...
 
@@ -19,7 +19,7 @@ Or you can find me one of these places...
 [Stack Overflow][5]
 
 
-  
+
 [1]: http://github.com/rachelslurs
 [2]: http://www.linkedin.com/in/rachelcantor
 [3]: http://codepen.io/rachelslurs

@@ -14,7 +14,7 @@ I am originally from Buffalo, New York. In my free time I enjoy going to stand u
 
 I am a big fan of [Polymer][1] and have built this site using web components with a significant nod to [Google's Material Design][2]. It is hosted on [Github Pages][3] using [Jekyll][4].
 
-I've made every effort for making this website accessible too. Try using your arrow keys to navigate!
+I've made every effort for making this website accessible too. Try using your space bar to navigate!
 
 Feel free to checkout [my source code][5].
 
