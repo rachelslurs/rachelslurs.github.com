@@ -4,13 +4,13 @@ title: Resumé
 permalink: /resume/
 ---
 
-I am a 31 year old software engineer, specializing in the front end of the web.
+## Experience Overview
 
-##Experience Overview
+My most recent experience was as a Front End Engineer on the tech team at Hillary for America, the presidential campaign of Hillary Clinton.
 
-My most recent experience was on the Research and Development team at tech consultancy, Control Group. I worked with clients such as the ACLU, World Wide Group, and the Edward M. Kennedy Institute for the Senate.
+Before I worked on the campaign, I was a Software Engineer on the Research and Development team at tech consultancy, Control Group (now Intersection). I worked with clients such as the ACLU, World Wide Group, and the Edward M. Kennedy Institute for the Senate.
 
-##Education
+## Education
 
 <div horizontal justified layout>
 	<div flex two><b>Sarah Lawrence College</b>, Bachelors of Arts</div>
@@ -20,7 +20,12 @@ My most recent experience was on the Research and Development team at tech consu
 	<div flex two> Video, Photography, Art History, Literature, Economics</div>
 </div>
 
-##Work
+## Work
+
+<div horizontal justified layout>
+	<div flex two><b>Front End Engineer</b>, CMS Team, Hillary for America</div>
+	<div flex>2015 - 2016</div>
+</div>
 
 <div horizontal justified layout>
 	<div flex two><b>Software Engineer</b>, R&D, Control Group</div>
@@ -47,9 +52,21 @@ My most recent experience was on the Research and Development team at tech consu
 	<div flex>2009 - 2010</div>
 </div>
 
-##Projects
+## Projects
 
-###Edward M. Kennedy Institute for the US Senate
+### Hillary Clinton for President 2016
+*Customized Wordpress Backend and Node Templating App*
+
+ - Customized Wordpress backend with REST API, not used for presentation layer
+ - Node templating app would get data from the REST API and generate templated pages dynamically
+
+### The Briefing
+*Wordpress and Jekyll site for Rapid Response efforts*
+
+ - Customized Wordpress backend with REST API, not used for presentation layer
+ - A Rake task would run any time a post was updated and generate any changed content in Jekyll.
+
+### Edward M. Kennedy Institute for the US Senate
 *Interactive Museum*
 
  - Single page web apps
@@ -58,9 +75,9 @@ My most recent experience was on the Research and Development team at tech consu
 
 My favorite project was the museum which opened this year in March, which was part of Edward Kennedy’s vision for a museum to teach children about the United States Senate in an exciting and immersive way. I worked onsite in the month prior to the opening and was amazed at how empty the building appeared without our tech, with the exception of the impeccably ornate replica of the Senate chamber. The entire museum is web based: from the Android tablets each visitor uses to interact with the museum, to the enormous projections on the wall that make up most of the museum’s exhibits.
 
-<iframe src="https://player.vimeo.com/video/123413904?title=0&byline=0&portrait=0" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/180214793?color=c9ff23&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-###World Wide Group
+### World Wide Group
 *High Tech Sales Office*
 
  - Chrome packaged web app
@@ -68,9 +85,7 @@ My favorite project was the museum which opened this year in March, which was pa
 
 Before the museum, I worked on the World Wide Group’s high tech sales office. I created a Chrome packaged app that responded to two RFID readers to change the views on an 80 inch 4k screen. The main challenges here were the animations as well. Since it was a webview on a pixel dense screen, the paint issues required significant troubleshooting, but ultimately, it ended up being a very elegant solution and paired nicely with an extravagant rotating 12 foot model of the building, that responded to the RFID readers as well.
 
-<iframe src="https://player.vimeo.com/video/117630050?title=0&byline=0&portrait=0" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-###Company Website
+### Company Website
 
  - Jekyll, static site generator
  - Built with LESS and jQuery
@@ -81,7 +96,7 @@ Prior to my time on the R&D team, I was the sole developer for Control Group’s
 
 **[Blog Post][6]**
 
-###Productivity Boost Using Google Apps Script
+### Productivity Boost Using Google Apps Script
 
  - Google Apps Script
  - Integrates with Zendesk API
@@ -92,7 +107,7 @@ I later expanded my script for use with Zendesk and open sourced it. My blog pos
 
 **[Blog Post][7]**
 
-###Branding Continuity and Marketing Drive
+### Branding Continuity and Marketing Drive
 
 More on the marketing front, I exhaustively applied style guides to a myriad of documents for both internal and external use after surveying dozens of use cases spanning business development, product development, and enterprise services. I established a company-wide archive of marketing materials along with guides and structure which encouraged wide adoption across departments while maintaining organization using Google Drive.
 

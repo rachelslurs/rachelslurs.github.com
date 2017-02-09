@@ -4,11 +4,11 @@ layout: content
 <div>
 	{{ content }}
 </div>
-   <p><small>{{% if page.tech %}}{{ page.tech }}{{% endif %}}</small></p>
+   <p><small>{% if page.tech %}{{ page.tech }}{% endif %}</small></p>
 <div>
 	<p>
 		<small>
-			{{% if page.meta %}}{{ page.meta }}{{% endif %}}{{% if page.press-title-1 %}}Press: <a href="{{ page.press-link-1 }}">{{ page.press-title-1 }}</a>{{% endif %}}
+			{% if page.meta %}{{ page.meta }}{% endif %}{% if page.press-title-1 %}Press: <a href="{{ page.press-link-1 }}">{{ page.press-title-1 }}</a>{% endif %}
 		</small>
 	</p>
 </div>

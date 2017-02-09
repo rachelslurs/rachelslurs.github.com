@@ -82,7 +82,7 @@
         template.keyHandler = function(e, detail, sender) {
           var pages = document.querySelector('#pages');
 
-          // Select page by num key. 
+          // Select page by num key.
           var num = parseInt(detail.key);
           if (!isNaN(num) && num <= this.pages.length) {
             pages.selectIndex(num - 1);
