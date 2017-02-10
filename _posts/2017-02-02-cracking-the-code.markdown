@@ -1,7 +1,8 @@
 ---
-layout: blog
+layout: post
 title: "Cracking the Coding Interview"
-date: 2017-02-02 18:38
+date: 2017-02-02 14:01
+linkurl: https://www.amazon.com/b/?node=3063530011&ref_=assoc_tag_ph_1394216334436&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=rachelslurs-20&linkId=56c70ff99160a5da56688e88fa57d0e0
 ---
 
 > I am not a recruiter. I am a software engineer. And as such, I know what it's like to be asked to whip up brilliant algorithms on the spot and then write flawless code on a whiteboard. I've been through this as a candidate and as an interviewer.
