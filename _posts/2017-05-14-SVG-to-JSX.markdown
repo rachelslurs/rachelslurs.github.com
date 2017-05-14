@@ -1,0 +1,10 @@
+---
+layout: post
+title: "SVG to JSX"
+date: 2017-05-14 15:36
+linkurl: http://svg2jsx.herokuapp.com/
+---
+
+[SVG to JSX](http://svg2jsx.herokuapp.com/)
+
+> Converts SVG to valid React SVG, written in Svelte
