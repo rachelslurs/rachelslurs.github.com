@@ -9,13 +9,12 @@ permalink: /stack/
 		<ul>
 			<li>CSS preprocessors (SASS, LESS)</li>
 			<li>Web components (Polymer)</li>
-			<li>HTML5 (Canvas)</li>
+			<li>HTML5</li>
 			<li>CSS3 animations</li>
 			<li>Templating engines (Mustache, Handlebars)</li>
-			<li>Javascript frameworks (jQuery, Ractive)</li>
-			<li>Javascript MVC frameworks (AngularJS)</li>
+			<li>Javascript frameworks (React, AngularJS, jQuery, Ractive)</li>
 			<li>Test driven development (Karma, Jasmine, Angular)</li>
-			<li>Task runners/build CI tools (Grunt, Jenkins, Jekyll)</li>
+			<li>Task runners/build CI tools (Grunt, Gulp, Jenkins, Travis)</li>
 			<li>Agile, Scrum</li>
 		</ul>
 	</div>
@@ -26,7 +25,8 @@ permalink: /stack/
 			<li>Packaged web apps (Chrome packaged web app, Node Webkit)</li>
 			<li>Version control (Github, git, SVN)</li>
 			<li>Bash</li>
-			<li>CMS (Wordpress, Yii, Drupal)</li>
+			<li>CMS (Wordpress, Django)</li>
+			<li>PHP</li>
 			<li>Front end frameworks (Twitter Bootstrap, Zurb Foundation)</li>
 			<li>Google Apps Script</li>
 			<li>Bug tracking (JIRA)</li>
@@ -41,6 +41,7 @@ permalink: /stack/
 		<h3>My Toolbox</h3>
 		<ul>
 			<li>Chrome Dev Tools</li>
+			<li>Atom</li>
 			<li>Sublime Text</li>
 			<li>Google Refine/Open Refine</li>
 			<li>Import.io</li>
@@ -52,12 +53,11 @@ permalink: /stack/
 		<ul>
 			<li>WebGL (three.js)</li>
 			<li>MVC frameworks (Backbone, Underscore, React)</li>
-			<li>PHP</li>
 			<li>Python</li>
 			<li>Database technologies (SQL, MongoDB)</li>
 			<li>AWS, Google Cloud Platform, Google App Engine</li>
 			<li>Arduino, Raspberry Pi</li>
 		</ul>
 	</div>
-	
+
 </div>

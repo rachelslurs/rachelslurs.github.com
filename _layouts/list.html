@@ -17,8 +17,42 @@
 
 					{% endif %}
 				{% endif %}
-				{% if page.title == 'Bookmarks' %}
+        {% if page.title == 'Bookmarks' %}
 					{% if post.layout == 'post' %}
+						<paper-shadow class="outer-card" z="2" layout horizontal>
+							<a href="{{ site.baseurl }}{{ post.url }}" target="_self">
+								<paper-item class="card">
+									{{ post.title }}
+								</paper-item>
+							</a>
+						</paper-shadow>
+					{% endif %}
+				{% endif %}
+        {% if page.title == 'Plants' %}
+					{% if post.layout == 'plant' %}
+            <paper-card heading={{post.title}} image="{{post.image-src}}" alt={{post.title}} class="white">
+              <div class="card-content">
+                {{post.plant}}
+              </div>
+              <div class="card-actions">
+                <paper-button>Share</paper-button>
+                <paper-button>Explore</paper-button>
+                <paper-icon-button icon="hardware:keyboard-arrow-up" title="more info" onclick="_toggle()" style="float:right;">
+                </paper-icon-button>
+                <iron-collapse id="more-info" style="width:100%;">
+                  {{post.content}}
+                </iron-collapse>
+                  <script>
+                    function _toggle() {
+                    var moreInfo = document.getElementById('more-info');
+                    var iconButton = Polymer.dom(event).localTarget;
+                    iconButton.icon = moreInfo.opened ? 'hardware:keyboard-arrow-up'
+                    : 'hardware:keyboard-arrow-down';
+                    moreInfo.toggle();
+                    }
+                  </script>
+                </div>
+            </paper-card>
 						<paper-shadow class="outer-card" z="2" layout horizontal>
 							<a href="{{ site.baseurl }}{{ post.url }}" target="_self">
 								<paper-item class="card">
