@@ -1,0 +1,7 @@
+---
+layout: plant
+title: "Jade"
+plant: "Crassula"
+image-src: "../assets/plants/jade.jpg"
+date: 2015-03-07T17:05:33-05:00
+---
