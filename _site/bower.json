@@ -1,0 +1,34 @@
+{
+  "name": "rachelslurs.github.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rachelslurs/rachelslurs.github.com",
+  "authors": [
+    "(rachelslurs <rachelcantor@gmail.com>)"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5",
+    "core-scaffold": "polymer/core-scaffold#~0.5.6",
+    "core-menu": "polymer/core-menu#~0.5.6",
+    "paper-item": "polymer/paper-item#~0.5.6",
+    "paper-tabs": "polymer/paper-tabs#~0.5.6",
+    "core-pages": "polymer/core-pages#~0.5.6",
+    "sampler-scaffold": "polymer/sampler-scaffold#~0.5.6",
+    "core-animated-pages": "Polymer/core-animated-pages#~0.5.6",
+    "paper-fab": "Polymer/paper-fab#~0.5.6",
+    "flatiron-director": "polymer/flatiron-director#~0.5.0",
+    "core-ajax": "polymer/core-ajax#~0.5.6",
+    "core-a11y-keys": "polymer/core-a11y-keys#~0.5.6"
+  },
+  "resolutions": {
+    "polymer": "^0.5",
+    "webcomponentsjs": "^0.6.0"
+  }
+}

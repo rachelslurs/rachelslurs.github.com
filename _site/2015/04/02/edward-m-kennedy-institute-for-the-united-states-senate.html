@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta property="og:title" content="Interactive Museum" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="/assets/preview.jpg" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+	<link rel="manifest" href="/icons/manifest.json">
+	<meta name="theme-color" content="#ffffff">
+	<title>Interactive Museum</title>
+	<meta name="description" content="">
+	<script src="//use.typekit.net/pvw5hkp.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+
+  	<script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="/bower_components/site-scaffold/scaffold.html">
+
+	<link rel="import" href="/bower_components/core-animated-pages/core-animated-pages.html">
+	<link rel="import" href="/bower_components/core-ajax/core-ajax.html">
+	<link rel="import" href="/bower_components/flatiron-director/flatiron-director.html">
+	<link rel="import" href="/bower_components/core-animated-pages/transitions/slide-from-bottom.html">
+	<link rel="import" href="/bower_components/core-icons/core-icons.html">
+	<link rel="import" href="/bower_components/paper-fab/paper-fab.html">
+	<link rel="import" href="/bower_components/paper-shadow/paper-shadow.html">
+	<link rel="import" href="/bower_components/paper-card/paper-card.html">
+	<link rel="import" href="/bower_components/paper-item/paper-item.html">
+	<link rel="stylesheet" href="/main.css" shim-shadowdom>
+	<link rel="canonical" href="http://localhost:4000/2015/04/02/edward-m-kennedy-institute-for-the-united-states-senate.html">
+	<link rel="alternate" type="application/rss+xml" title="Rachel Cantor" href="http://localhost:4000/feed.xml" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64891425-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+
+  <body unresolved>
+  	<section>
+    	<div>
+	<iframe src="https://player.vimeo.com/video/123413904?color=c9ff23&amp;title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<ul>
+  <li>Single page web apps</li>
+  <li>Built with SASS, Grunt, AngularJS, Ractive.js, and vanilla JS</li>
+  <li>Used both standard AJAX and web sockets for cross platform communication</li>
+</ul>
+
+<p>My favorite project was the museum which opened this year in March, which was part of Edward Kennedy’s vision for a museum to teach children about the United States Senate in an exciting and immersive way. I worked onsite in the month prior to the opening and was amazed at how empty the building appeared without our tech, with the exception of the impeccably ornate replica of the Senate chamber. The entire museum is web based: from the Android tablets each visitor uses to interact with the museum, to the enormous projections on the wall that make up most of the museum’s exhibits.</p>
+
+<p>The tablets involved a considerable reliance on Angular for the various microapps contained within, and communicated with the museum at large using web sockets via Scala’s Play framework. I worked primarily on the front end for the tablets, learning a lot about Angular in the process. The wall exhibits were primarily single page web apps, but with a large reliance on responding to the states being sent by the platform. Since the animations were significant in terms of performance demands, I had to collaborate extensively with the backend engineers to come up with ways to avoid the appearance of “jank” on the front end. Most significantly, this can be seen in the exhibit “People of the Senate.” This exhibit, a single page web app, with a considerably complicated API, would change every 10 seconds for every session of the senate, going back to when there weren’t even 50 states, with pictures of each senator (or illustrations). I was tasked with adding a smooth card flip animation, even though there could be up to 50 image changes in a tick. Through some trial and error, and collaboration with the backend engineers, I created an animation that appears smooth and has an aquarium-like effect.</p>
+
+</div>
+   <p><small>Nexus 7 tablets, AngularJS, Ractive, NodeJS, Web Sockets</small></p>
+<div>
+	<p>
+		<small>
+			Press: <a href="http://www.nytimes.com/2015/02/09/arts/design/edward-m-kennedy-institute-aims-to-teach-collaboration.html">Edward M. Kennedy Institute Aims to Teach Collaboration</a>
+		</small>
+	</p>
+</div>
+
+    </section>
+  </body>
+</html>
